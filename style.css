@@ -32,6 +32,7 @@ body {
     position: relative;
     overflow: hidden;
 }
+
 a:after {
     content: '';
     width: 80px;
@@ -40,9 +41,26 @@ a:after {
     position: absolute;
     bottom: -80px;
     left: 0;
-    
-    background: linear-gradient(to bottom, #8A2387, #E94057, #F27121);
     transition: 0.15s;
+
+}
+.facebook-icon:after {
+    background: linear-gradient(to bottom, #3A5795 0%, #2B4886 100%);
+}
+
+.twitter-icon:after {
+    background: linear-gradient(to bottom, #55ACEE 0%, #42A5F5 100%);
+}
+.instagram-icon::after{
+    background: linear-gradient(to bottom, #8A2387, #E94057, #F27121);
+}
+
+.linkedin-icon:after {
+    background: linear-gradient(to bottom, #0077B5 0%, #00A0E3 100%);
+}
+
+.github-icon:after {
+    background: #333;
 }
 .socialicons .icon:hover {
     color: #fff;
